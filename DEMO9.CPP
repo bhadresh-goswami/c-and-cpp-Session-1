@@ -1,0 +1,36 @@
+
+	#include<iostream.h>
+	#include<conio.h>
+
+	class democlass{
+
+	public:
+		void set(int x,int y)
+		{
+			a = x;
+			b = y;
+		}
+		void sum(){
+			cout<<"\n\nValue of a "<<a<<"\tValue of b "<<b<<"\n";
+			cout<<"\n\tSum is "<<a+b;
+		}
+	private:
+		int a,b;
+	protected:
+
+	};
+
+	void main()
+	{
+
+		democlass d1,d2;
+		clrscr();
+
+			d1.set(3,4);
+			d2.set(13,41);
+
+			d1.sum();
+			d2.sum();
+
+		getch();
+	}
